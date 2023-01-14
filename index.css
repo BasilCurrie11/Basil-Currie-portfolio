@@ -28,10 +28,12 @@ li{font-size:12px;}
 
 #avatar{
 	background-image:url('avatar.jpg');
+	background-size:cover;
+	background-position:center;
 	width:110px;
-	height:110px;
-	border-radius:10px;
-	margin-right:20px;
+	min-height:110px;
+	max-height:500px;
+	margin-top:0;
 }
 
 #maincontent{
@@ -44,7 +46,7 @@ li{font-size:12px;}
 
 .project{
 	background-color:#eee;
-	margin:30px auto;
+	margin:10px auto 0 auto;
 	transition:0.3s;
 	overflow:hidden;
 	width:100%;
@@ -83,6 +85,14 @@ li{font-size:12px;}
 #title{
 	display:flex;
 	align-items:center;
+	justify-content:space-between;
+	text-align:center;
+}
+
+#words{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
 }
 
 #vr {
@@ -100,4 +110,5 @@ li{font-size:12px;}
 	#cvparta{width:60%;padding-right:10px;}
 	#cvpartb{width:40%;padding-left:10px;}
 	#vr{display:block;}
+	#title{text-align:left;justify-content:left;}
 }
