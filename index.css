@@ -31,7 +31,6 @@ h2{
 p, li{
 	font-family:'arial', serif;
 	margin:0;
-	color:#430;
 }
 
 li{font-size:12px;}
@@ -50,6 +49,18 @@ li{font-size:12px;}
 #chickenbody{
 	background-image:url('farm-background.jpg');
 	background-size:cover;
+}
+
+#fullscreen{
+	background-image:url('fullscreen.png');
+	width:30px;
+	height:25px;
+	background-size:cover;
+	filter: drop-shadow(0 0 2px #000);
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	z-index:1;
 }
 
 #gatebody{
@@ -157,6 +168,11 @@ li{font-size:12px;}
 	display:none;
 }
 
+#wmta-iframe{
+	height:50vw;
+	position:relative;
+}
+
 #words{
 	margin-top:0px;
 }
@@ -178,9 +194,11 @@ li{font-size:12px;}
 	#cvparta{width:60%;padding-right:10px;}
 	#cvpartb{width:40%;padding-left:10px;}
 	.image-small{width:30%;}
+	.phone{display:none;}
 	.projects{display:flex;justify-content:space-between;}
 	.text-projects{width:60%;padding:0 10px;}
 	#title{text-align:left;justify-content:left;align-items:flex-start;}
 	.wide{display:block;}
+	#wmta-iframe{height:300px;}
 	#vr{display:block;}
 }
